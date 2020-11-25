@@ -1,0 +1,28 @@
+{
+  "name": "willow",
+  "version": "1.0.0",
+  "description": "CSS Framework",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass sass/main.scss css/style.comp.css",
+    "prefix": "postcss --use autoprefixer -b \"last 10 versions\" css/style.comp.css -o css/style.prefix.css",
+    "build": "node-sass css/style.prefix.css css/style.min.css --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aybuddy/willow.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aybuddy/willow/issues"
+  },
+  "homepage": "https://github.com/aybuddy/willow#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.0.2",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.1.10",
+    "postcss-cli": "^8.3.0"
+  }
+}
